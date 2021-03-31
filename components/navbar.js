@@ -4,9 +4,10 @@ import Link from 'next/link';
 import styled from 'styled-components';
 //import { useMediaQuery } from 'react-responsive';
 import { useState, useCallback, useEffect } from 'react';
+import React from 'react';
 
 const StyledOverlayElement = styled.a`
-	padding: 8px;
+	padding: 2px;
 	text-decoration: none;
 	font-size: 26px;
 	color: #a6a6a6;
@@ -19,10 +20,12 @@ const StyledOverlayElementHeader = styled.h2`
 	padding: 8px;
 	text-decoration: none;
 	font-size: 42px;
-	color: #818181;
+	color: #98b6e3;
 	display: block;
 	transition: 0.3s;
-	color: white;
+	margin-bottom: 0;
+	margin-top: 30px;
+	cursor: default;
 	`;
 
 const useMediaQuery = (width) => {
@@ -71,6 +74,94 @@ function Navbar() {
 		console.log("eee");
 	}
 
+	const MenuElement = ((props) => {
+		return(
+			<Link href={props.url}>
+				<StyledOverlayElement href={props.url} onClick={() => closeFullscreenNav()}>
+					{props.name}
+				</StyledOverlayElement>
+			</Link>
+		);
+	});
+
+	const menuData = [
+		{
+			type: 'title',
+			name: 'Omsorg',
+		},
+		{
+			type: 'link',
+			url: '/omsorg/bli-kund',
+			name: 'Vill du bli kund?',
+		},
+		{
+			type: 'link',
+			url: '/omsorg/hur-fungerar-det',
+			name: 'Hur fungerar hemtjänst?',
+		},
+		{
+			type: 'link',
+			url: '/omsorg/hur-jobbar-vi',
+			name: 'Hur jobbar vi på Livara?',
+		},
+		{
+			type: 'link',
+			url: '/omsorg/recensioner',
+			name: 'Recensioner om Livara',
+		},
+		{
+			type: 'title',
+			name: 'Assistans',
+		},
+		{
+			type: 'link',
+			url: '/assistans/bli-kund',
+			name: 'Vill du bli kund?',
+		},
+		{
+			type: 'link',
+			url: '/assistans/hur-fungerar-det',
+			name: 'Hur fungerar hemtjänst?',
+		},
+		{
+			type: 'link',
+			url: '/assistans/hur-jobbar-vi',
+			name: 'Hur jobbar vi på Livara?',
+		},
+		{
+			type: 'link',
+			url: '/assistans/recensioner',
+			name: 'Recensioner om Livara',
+		},
+		{
+			type: 'title',
+			name: 'Övrigt',
+		},
+		{
+			type: 'link',
+			url: '/om-oss',
+			name: 'Om Oss',
+		},
+		{
+			type: 'link',
+			url: '/kontakt',
+			name: 'Kontakt',
+		},
+	];
+
+	const menuCollection = menuData.map((item, index) => {
+		return (
+			<React.Fragment key={index}>
+				{item.type === 'title' &&
+					<StyledOverlayElementHeader>{item.name}</StyledOverlayElementHeader>
+				}
+				{item.type === 'link' &&
+					<MenuElement url={item.url} name={item.name}/>
+				}
+			</React.Fragment>
+		)
+	});
+
 
 	const isBreakpoint = useMediaQuery(1224);
 
@@ -79,21 +170,9 @@ function Navbar() {
 			<div className="overlay" style={isOverlayActive ? overlayActive : {}}>
 				{isOverlayActive &&
 					<>
-						<div onClick={() => closeFullscreenNav()} style={{ position: 'absolute', top: '10px', right: '45px', fontSize: '60px', color: 'white' }}>&times;</div>
+						<div onClick={() => closeFullscreenNav()} style={{ position: 'absolute', top: '10px', right: '45px', fontSize: '60px', color: 'white', cursor: 'pointer' }}>&times;</div>
 						<div style={{ position: 'relative', top: '10%', width: '100%', textAlign: 'center' }}>
-							<StyledOverlayElementHeader><u>Omsorg</u></StyledOverlayElementHeader>
-							<StyledOverlayElement href="#">Vill du bli kund?</StyledOverlayElement>
-							<StyledOverlayElement href="#">Hur fungerar hemtjänst?</StyledOverlayElement>
-							<StyledOverlayElement href="#">Hur jobbar vi på Livara?</StyledOverlayElement>
-							<StyledOverlayElement href="#">Recensioner om Livara</StyledOverlayElement>
-							<StyledOverlayElementHeader><u>Assistans</u></StyledOverlayElementHeader>
-							<StyledOverlayElement href="#">Vill du bli kund?</StyledOverlayElement>
-							<StyledOverlayElement href="#">Hur fungerar hemtjänst?</StyledOverlayElement>
-							<StyledOverlayElement href="#">Hur jobbar vi på Livara?</StyledOverlayElement>
-							<StyledOverlayElement href="#">Recensioner om Livara</StyledOverlayElement>
-							<StyledOverlayElementHeader><u>Övrigt</u></StyledOverlayElementHeader>
-							<StyledOverlayElement href="#">Om Företaget</StyledOverlayElement>
-							<StyledOverlayElement href="#">Kontakt</StyledOverlayElement>
+							{menuCollection}
 						</div>
 					</>
 				}

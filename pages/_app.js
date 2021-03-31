@@ -42,17 +42,20 @@ function MyApp({ Component, pageProps }) {
 							</Link>
 						</div>
 						<br />
-						<div style={{ width: '5%' }}>
+						<div style={{ width: '50%', color: 'white' }} className="d-flex justify-content-center">
 							<Link href={'/kontakt/'} style={{ width: 'auto' }}>
 								<a style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }} className="mb-0">Kontakt</a>
 							</Link>
+							&nbsp;|&nbsp;
 							<a href={'https://seniorval.se/hemtjanst/goteborg/livara-omsorg/'} style={{ textDecoration: 'none', color: 'white' }}>
 								<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }}>Seniorval</p>
 							</a>
+							&nbsp;|&nbsp;
 							<a href={'https://www.allabolag.se/5591696603/livara-omsorg-ab'} style={{ textDecoration: 'none', color: 'white' }}>
 								<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }}>Allabolag</p>
 							</a>
 						</div>
+						<br />
 						<p className="text-white">Livara © 2021</p>
 					</center>
 				</footer>
