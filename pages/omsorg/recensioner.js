@@ -1,7 +1,7 @@
 /* eslint-disable */
 import Review from '../../components/Review';
 import { Divider } from 'semantic-ui-react';
-
+import Head from "next/head";
 
 
 function App() {
@@ -35,6 +35,9 @@ function App() {
 
 	return (
 		<>
+			<Head>
+				<title>Omsorg</title>
+			</Head>
 			<center>
 				<h2>
 					Recensioner

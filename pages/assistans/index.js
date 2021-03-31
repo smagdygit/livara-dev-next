@@ -1,13 +1,16 @@
 /* eslint-disable */
 import { Grid, Divider } from 'semantic-ui-react';
 import Thumbnail from '@/components/Thumbnail';
-
+import Head from "next/head";
 
 
 function Assistans() {
 
 	return (
 		<>
+			<Head>
+				<title>Assistans</title>
+			</Head>
 			<center>
 				<h2>
 					Assistans Meny

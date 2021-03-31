@@ -15,7 +15,7 @@ const StyledOverlayElement = styled.a`
 	color: white;
 	`;
 
-const StyledOverlayElementHeader = styled.h1`
+const StyledOverlayElementHeader = styled.h2`
 	padding: 8px;
 	text-decoration: none;
 	font-size: 42px;

@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import SlidingReviews from '@/components/SlidingReviews';
 import Link from 'next/link';
 import useMediaQuery from 'react-responsive';
+import Head from "next/head";
+
 
 function Mainpage() {
 	const isDesktop = useMediaQuery({
@@ -25,6 +27,10 @@ function Mainpage() {
 
 	return (
 		<>
+			<Head>
+				<title>Livara - Assistans och Omsorg</title>
+				<meta name="description" content="Livara är ett omsorgs och assistensföretag som är till för att hjälpa dig och dina nära och kära."></meta>
+			</Head>
 			<center>
 				<h2>
 					Välj din avdelning
