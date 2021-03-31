@@ -114,10 +114,12 @@ function Navbar() {
 									</Grid.Column>
 									<Grid.Column width={8} className="p-3">
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
-											<center>
-												<h1>Livara</h1>
-												<p>Vi Finns för Dig</p>
-											</center>
+											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
+												<center>
+													<h1>Livara</h1>
+													<p>Vi Finns för Dig</p>
+												</center>
+											</a>
 										</Link>
 									</Grid.Column>
 									<Grid.Column width={4} onClick={e => openFullscreenNav()} className="p-3">
@@ -132,17 +134,21 @@ function Navbar() {
 								<>
 									<Grid.Column width={2} className="m-0 p-0" style={{ cursor: 'pointer' }}>
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
-											<div>
-												<Image src="/livara_logga_0.png" size="tiny" alt="Livara Logga" className="m-0" />
-											</div>
+											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
+												<div>
+													<Image src="/livara_logga_0.png" size="tiny" alt="Livara Logga" className="m-0" />
+												</div>
+											</a>
 										</Link>
 									</Grid.Column>
 									<Grid.Column width={8} style={{ cursor: 'pointer' }}>
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
-											<div>
-												<h1>Livara Grupp AB</h1>
-												<p>Hemtjänst och Assistans</p>
-											</div>
+											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
+												<div>
+													<h1>Livara Grupp AB</h1>
+													<p>Hemtjänst och Assistans</p>
+												</div>
+											</a>
 										</Link>
 									</Grid.Column>
 									<Grid.Column width={2}>

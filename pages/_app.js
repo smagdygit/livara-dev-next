@@ -31,15 +31,15 @@ function MyApp({ Component, pageProps }) {
 			</div>
 			<footer style={{ backgroundColor: 'black', width: '' }} className="mt-5">
 				<center className="p-4">
-					<div class="w-25">
+					<div className="w-25">
 						<Link href={'/'} passHref>
 							<Logo />
 						</Link>
 					</div>
 					<br />
 					<div style={{width: '5%'}}>
-						<Link href={'/kontakt/'} style={{width: 'auto'}} passHref>
-							<Kontakt />
+						<Link href={'/kontakt/'} style={{width: 'auto'}}>
+							<a style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }} className="mb-0">Kontakt</a>
 						</Link>
 						<a href={'https://seniorval.se/hemtjanst/goteborg/livara-omsorg/'} style={{ textDecoration: 'none', color: 'white' }}>
 							<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }}>Seniorval</p>
