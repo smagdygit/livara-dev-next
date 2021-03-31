@@ -16,6 +16,12 @@ function MyApp({ Component, pageProps }) {
 		</a>
 	));
 
+	const Kontakt = React.forwardRef((props, ref) => (
+		<a ref={ref} {...props}>
+			<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }} className="mb-0">Kontakt</p>
+		</a>
+	));
+
 	return (
 		<div>
 			<Navbar>
@@ -32,8 +38,8 @@ function MyApp({ Component, pageProps }) {
 					</div>
 					<br />
 					<div style={{width: '5%'}}>
-						<Link href={'/kontakt/'} style={{width: 'auto'}}>
-							<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }} className="mb-0">Kontakt</p>
+						<Link href={'/kontakt/'} style={{width: 'auto'}} passHref>
+							<Kontakt />
 						</Link>
 						<a href={'https://seniorval.se/hemtjanst/goteborg/livara-omsorg/'} style={{ textDecoration: 'none', color: 'white' }}>
 							<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }}>Seniorval</p>
