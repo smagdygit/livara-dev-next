@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
 				<div className="container mt-4" style={{ minHeight: 'calc(100vh - 431px)' }}>
 					<Component {...pageProps} />
 				</div>
-				<footer style={{ backgroundColor: 'black', width: '' }} className="mt-5">
+				<footer style={{ backgroundColor: 'rgb(0, 0, 0, 0.9)', width: '' }} className="mt-5">
 					<center className="p-4">
 						<div className="w-25">
 							<Link href={'/'} passHref>

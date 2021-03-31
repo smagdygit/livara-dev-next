@@ -51,19 +51,19 @@ function Mainpage() {
 					<h3>
 						Välkommen till oss på Livara!
 				</h3>
-					<p>Vi tycker att du har rätt till en fungerande vardag på dina villkor. Vårt mål är att du alltid ska känna dig trygg i ditt hem och känna att din integritet respekteras. Därför är dina önskemål och behov vår prioritering. Tillsammans skapar vi en anpassad vård för just dig.</p>
+					<p>Vi tycker att du har rätt till en fungerande vardag på dina villkor. Vårt mål på Livara är att du alltid ska känna dig trygg i ditt hem och känna att din integritet respekteras. Därför är dina önskemål och behov vår prioritering. Tillsammans skapar vi en anpassad vård för just dig.</p>
 					<p>Vi har alla våra yrkesbakgrunder i att arbeta med människor och socialt arbete i olika former. Tillsammans har vi många års erfarenhet inom den offentliga sektorn och landstinget. Vi har arbetat inom vård och omsorg, socialtjänst, funktionshinder, rättspsykiatrin, barn och ungdomar i utsatthet, metodutveckling och med bemanning av personal inom olika kommunala sektorer.</p>
 				</div>
 				<div className="mb-5">
 					<h3>
-						Vill du ha mer info om vår bakgrund?
+						Vill du ha mer info om Livaras bakgrund?
 				</h3>
 					<p>Då är du välkommen att maila dina frågor via vårt formulär eller ringa till vår verksamhetsansvarig.</p>
 					<Link href={'/kontakt/'}>Klicka här för att komma till kontaktsidan</Link>
 				</div>
 				<div className="mb-5">
 					<h3>
-						Besök oss på Seniorval
+						Besök Livara på Seniorval
 				</h3>
 					<p>Seniorval är en sökmotor där du kan se diverse hemtjänst i sverige, och självklart har vi även vår egen sida där om ni vill jämföra oss med alternativen.</p>
 					<a href={'https://www.seniorval.se/hemtjanst/goteborg/livara-omsorg'}>Klicka här för att komma till seniorval</a>

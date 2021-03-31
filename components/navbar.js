@@ -98,7 +98,7 @@ function Navbar() {
 					</>
 				}
 			</div>
-			<header style={{ backgroundColor: '#f5f5f5' }} className="mb-2">
+			<header style={{ backgroundColor: 'rgb(245, 245, 245, 0.4)' }} className="mb-2">
 				<center>
 					<Grid padded centered verticalAlign='middle' style={{ maxWidth: '1100px', height: '110px' }}>
 						<Grid.Row style={{ height: '100%' }} className="p-0">
