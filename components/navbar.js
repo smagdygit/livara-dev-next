@@ -75,7 +75,7 @@ function Navbar() {
 	}
 
 	const MenuElement = ((props) => {
-		return(
+		return (
 			<Link href={props.url}>
 				<StyledOverlayElement href={props.url} onClick={() => closeFullscreenNav()}>
 					{props.name}
@@ -156,7 +156,7 @@ function Navbar() {
 					<StyledOverlayElementHeader>{item.name}</StyledOverlayElementHeader>
 				}
 				{item.type === 'link' &&
-					<MenuElement url={item.url} name={item.name}/>
+					<MenuElement url={item.url} name={item.name} />
 				}
 			</React.Fragment>
 		)
@@ -231,13 +231,19 @@ function Navbar() {
 										</Link>
 									</Grid.Column>
 									<Grid.Column width={2}>
-
 									</Grid.Column>
-									<Grid.Column width={4} onClick={e => openFullscreenNav()} style={{ height: '100%', width: '100%', verticalAlign: 'middle', paddingRight: '0' }}>
+									<Grid.Column width={4}  style={{ height: '100%', width: '100%', verticalAlign: 'middle', paddingRight: '0' }}>
 										{/*<div className="float-right d-flex text-center justify-content-center" style={{height: '100%', width: '100%'}}>
 											<Button size="big" className="align-self-center" style={{}}>Meny</Button>
 										</div>*/}
-										<Button size="big" className="float-right" style={{ marginTop: '12%' }}>Meny</Button>
+										<div>			
+											<Button size="big" className="float-right" style={{ marginTop: '12%', marginLeft: '6%' }} onClick={e => openFullscreenNav()}>Meny</Button>
+										</div>
+										<div>
+										<Link href={'/kontakt'}>
+											<Button size="big" className="float-right" style={{ marginTop: '12%' }} >Kontakt</Button>
+										</Link>
+										</div>
 									</Grid.Column>
 								</>
 							}
