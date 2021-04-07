@@ -41,7 +41,7 @@ function Kontakt() {
 
 		if (!isNameError && !isEmailError) {
 			setLoading(true);
-			fetch('https://formspree.io/f/xayayyag', {
+			fetch('https://formspree.io/f/mayaybjg', {
 				method: 'POST',
 				headers: {
 					'Accept': 'application/json',
