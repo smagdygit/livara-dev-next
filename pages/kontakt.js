@@ -49,7 +49,7 @@ function Kontakt() {
 				},
 				body: JSON.stringify({
 					_replyto: email,
-					area: `${select}`,
+					area: `${JSON.stringify(select)}`,
 					name: `${name}`,
 					message: `${text}`
 				})
