@@ -4,7 +4,7 @@ import { React, useEffect, useState } from 'react';
 import Head from "next/head";
 
 const options = [
-	{ key: 'omsorg', text: 'Omsorg', value: 'omsorg' },
+	{ key: 'hemtjänst', text: 'Hemtjänst', value: 'hemtjänst' },
 	{ key: 'assistans', text: 'Assistans', value: 'assistans' },
 	{ key: 'övrigt', text: 'Övrigt', value: 'övrigt' },
 	{ key: 'b2b', text: 'B2B', value: 'b2b' },

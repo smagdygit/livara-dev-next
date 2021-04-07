@@ -28,8 +28,8 @@ function Mainpage() {
 	return (
 		<>
 			<Head>
-				<title>Livara - Assistans och Omsorg</title>
-				<meta name="description" content="Livara är ett omsorgs och assistensföretag som är till för att hjälpa dig och dina nära och kära."></meta>
+				<title>Livara - Hemtjänst och Assistans</title>
+				<meta name="description" content="Livara är ett hemtjänsts och assistensföretag som är till för att hjälpa dig och dina nära och kära."></meta>
 			</Head>
 			<center>
 				<h2>
@@ -39,7 +39,7 @@ function Mainpage() {
 			</center>
 			<Grid columns={2} divided padded verticalAlign='middle'>
 				<Grid.Row className="m-0 pt-0">
-					<Thumbnail name="Omsorg" url="../omsorg/" alt="Omsorg" image="url('https://images.pexels.com/photos/3733929/pexels-photo-3733929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')" />
+					<Thumbnail name="Hemtjänst" url="../hemtjanst/" alt="Hemtjänst" image="url('https://images.pexels.com/photos/3733929/pexels-photo-3733929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')" />
 					<div style={{ width: '5%' }} />
 					<Thumbnail name="Assistans" url="../assistans/" alt="Assistans" image="url('https://images.unsplash.com/photo-1495433983223-7ac06157ca62?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')" />
 				</Grid.Row>
@@ -52,7 +52,7 @@ function Mainpage() {
 						Välkommen till oss på Livara!
 				</h3>
 					<p>Vi tycker att du har rätt till en fungerande vardag på dina villkor. Vårt mål på Livara är att du alltid ska känna dig trygg i ditt hem och känna att din integritet respekteras. Därför är dina önskemål och behov vår prioritering. Tillsammans skapar vi en anpassad vård för just dig.</p>
-					<p>Vi har alla våra yrkesbakgrunder i att arbeta med människor och socialt arbete i olika former. Tillsammans har vi många års erfarenhet inom den offentliga sektorn och landstinget. Vi har arbetat inom vård och omsorg, socialtjänst, funktionshinder, rättspsykiatrin, barn och ungdomar i utsatthet, metodutveckling och med bemanning av personal inom olika kommunala sektorer.</p>
+					<p>Vi har alla våra yrkesbakgrunder i att arbeta med människor och socialt arbete i olika former. Tillsammans har vi många års erfarenhet inom den offentliga sektorn och landstinget. Vi har arbetat inom vård och hemtjänst, socialtjänst, funktionshinder, rättspsykiatrin, barn och ungdomar i utsatthet, metodutveckling och med bemanning av personal inom olika kommunala sektorer.</p>
 				</div>
 				<div className="mb-5">
 					<h3>
@@ -66,7 +66,7 @@ function Mainpage() {
 						Besök Livara på Seniorval
 				</h3>
 					<p>Seniorval är en sökmotor där du kan se diverse hemtjänst i sverige, och självklart har vi även vår egen sida där om ni vill jämföra oss med alternativen.</p>
-					<a href={'https://www.seniorval.se/hemtjanst/goteborg/livara-omsorg'}>Klicka här för att komma till seniorval</a>
+					<a href={'https://www.seniorval.se/hemtjanst/goteborg/livara-hemtjänst'}>Klicka här för att komma till seniorval</a>
 				</div>
 				<SlidingReviews />
 			</div>

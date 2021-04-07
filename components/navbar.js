@@ -87,26 +87,26 @@ function Navbar() {
 	const menuData = [
 		{
 			type: 'title',
-			name: 'Omsorg',
+			name: 'Hemtjänst',
 		},
 		{
 			type: 'link',
-			url: '/omsorg/bli-kund',
+			url: '/hemtjanst/bli-kund',
 			name: 'Vill du bli kund?',
 		},
 		{
 			type: 'link',
-			url: '/omsorg/hur-fungerar-det',
+			url: '/hemtjanst/hur-fungerar-det',
 			name: 'Hur fungerar hemtjänst?',
 		},
 		{
 			type: 'link',
-			url: '/omsorg/hur-jobbar-vi',
+			url: '/hemtjanst/hur-jobbar-vi',
 			name: 'Hur jobbar vi på Livara?',
 		},
 		{
 			type: 'link',
-			url: '/omsorg/recensioner',
+			url: '/hemtjanst/recensioner',
 			name: 'Recensioner om Livara',
 		},
 		{
@@ -224,7 +224,7 @@ function Navbar() {
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
 											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
 												<div>
-													<h1>Livara Grupp AB</h1>
+													<h1>Livara Omsorg AB</h1>
 													<p>Hemtjänst och Assistans</p>
 												</div>
 											</a>

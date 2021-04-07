@@ -47,11 +47,11 @@ function MyApp({ Component, pageProps }) {
 								<a style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }} className="mb-0">Kontakt</a>
 							</Link>
 							&nbsp;|&nbsp;
-							<a href={'https://seniorval.se/hemtjanst/goteborg/livara-omsorg/'} style={{ textDecoration: 'none', color: 'white' }}>
+							<a href={'https://seniorval.se/hemtjanst/goteborg/livara-hemtjänst/'} style={{ textDecoration: 'none', color: 'white' }}>
 								<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }}>Seniorval</p>
 							</a>
 							&nbsp;|&nbsp;
-							<a href={'https://www.allabolag.se/5591696603/livara-omsorg-ab'} style={{ textDecoration: 'none', color: 'white' }}>
+							<a href={'https://www.allabolag.se/5591696603/livara-hemtjänst-ab'} style={{ textDecoration: 'none', color: 'white' }}>
 								<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }}>Allabolag</p>
 							</a>
 						</div>

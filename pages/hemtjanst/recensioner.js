@@ -36,7 +36,7 @@ function App() {
 	return (
 		<>
 			<Head>
-				<title>Omsorg</title>
+				<title>Hemtjänst</title>
 			</Head>
 			<center>
 				<h2>
