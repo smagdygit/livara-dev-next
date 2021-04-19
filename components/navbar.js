@@ -147,6 +147,11 @@ function Navbar() {
 			url: '/kontakt',
 			name: 'Kontakt',
 		},
+		{
+			type: 'link',
+			url: '/nyheter',
+			name: 'Nyheter',
+		},
 	];
 
 	const menuCollection = menuData.map((item, index) => {
