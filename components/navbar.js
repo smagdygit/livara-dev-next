@@ -55,7 +55,7 @@ const useMediaQuery = (width) => {
 }
 
 function Navbar() {
-	const overlayActive = { display: 'block', backgroundColor: 'rgba(0, 0, 0, 0.9)', overflowX: 'hidden', transition: '0.3s', position: 'fixed', zIndex: '10', left: '0', top: '0', height: '100%', width: '100%' }
+	const overlayActive = { display: 'block', backgroundColor: 'rgba(0, 0, 0, 0.95)', overflowX: 'hidden', transition: '0.3s', position: 'fixed', zIndex: '10', left: '0', top: '0', height: '100%', width: '100%' }
 	const [isOverlayActive, setIsOverlayActive] = useState(false);
 
 
@@ -85,86 +85,101 @@ function Navbar() {
 	});
 
 	const menuData = [
-		{
-			type: 'title',
-			name: 'Hemtjänst',
-		},
-		{
-			type: 'link',
-			url: '/hemtjanst/bli-kund',
-			name: 'Vill du bli kund?',
-		},
-		{
-			type: 'link',
-			url: '/hemtjanst/hur-fungerar-det',
-			name: 'Hur fungerar hemtjänst?',
-		},
-		{
-			type: 'link',
-			url: '/hemtjanst/hur-jobbar-vi',
-			name: 'Hur jobbar vi på Livara?',
-		},
-		{
-			type: 'link',
-			url: '/hemtjanst/recensioner',
-			name: 'Recensioner om Livara',
-		},
-		{
-			type: 'title',
-			name: 'Assistans',
-		},
-		{
-			type: 'link',
-			url: '/assistans/bli-kund',
-			name: 'Vill du bli kund?',
-		},
-		{
-			type: 'link',
-			url: '/assistans/hur-fungerar-det',
-			name: 'Hur fungerar hemtjänst?',
-		},
-		{
-			type: 'link',
-			url: '/assistans/hur-jobbar-vi',
-			name: 'Hur jobbar vi på Livara?',
-		},
-		{
-			type: 'link',
-			url: '/assistans/recensioner',
-			name: 'Recensioner om Livara',
-		},
-		{
-			type: 'title',
-			name: 'Övrigt',
-		},
-		{
-			type: 'link',
-			url: '/om-oss',
-			name: 'Om Oss',
-		},
-		{
-			type: 'link',
-			url: '/kontakt',
-			name: 'Kontakt',
-		},
-		{
-			type: 'link',
-			url: '/nyheter',
-			name: 'Nyheter',
-		},
+		[
+			{
+				type: 'title',
+				name: 'Hemtjänst',
+			},
+			{
+				type: 'link',
+				url: '/hemtjanst/bli-kund',
+				name: 'Vill du bli kund?',
+			},
+			{
+				type: 'link',
+				url: '/hemtjanst/hur-fungerar-det',
+				name: 'Hur fungerar hemtjänst?',
+			},
+			{
+				type: 'link',
+				url: '/hemtjanst/hur-jobbar-vi',
+				name: 'Hur jobbar vi på Livara?',
+			},
+			{
+				type: 'link',
+				url: '/hemtjanst/recensioner',
+				name: 'Recensioner om Livara',
+			},
+		],
+		[
+			{
+				type: 'title',
+				name: 'Assistans',
+			},
+			{
+				type: 'link',
+				url: '/assistans/bli-kund',
+				name: 'Vill du bli kund?',
+			},
+			{
+				type: 'link',
+				url: '/assistans/hur-fungerar-det',
+				name: 'Hur fungerar hemtjänst?',
+			},
+			{
+				type: 'link',
+				url: '/assistans/hur-jobbar-vi',
+				name: 'Hur jobbar vi på Livara?',
+			},
+			{
+				type: 'link',
+				url: '/assistans/recensioner',
+				name: 'Recensioner om Livara',
+			},
+		],
+		[
+			{
+				type: 'title',
+				name: 'Övrigt',
+			},
+			{
+				type: 'link',
+				url: '/om-oss',
+				name: 'Om Oss',
+			},
+			{
+				type: 'link',
+				url: '/kontakt',
+				name: 'Kontakt',
+			},
+			{
+				type: 'link',
+				url: '/nyheter',
+				name: 'Nyheter',
+			},
+		]
 	];
 
 	const menuCollection = menuData.map((item, index) => {
+		const subMenu = item.map((subItem, subIndex) => {
+			return (
+				<React.Fragment key={'overlay-child-' + subIndex}>
+					{subItem.type === 'title' &&
+						<StyledOverlayElementHeader>{subItem.name}</StyledOverlayElementHeader>
+					}
+					{subItem.type === 'link' &&
+						<MenuElement url={subItem.url} name={subItem.name} />
+					}
+				</React.Fragment>
+			)
+		});
+
 		return (
-			<React.Fragment key={index}>
-				{item.type === 'title' &&
-					<StyledOverlayElementHeader>{item.name}</StyledOverlayElementHeader>
-				}
-				{item.type === 'link' &&
-					<MenuElement url={item.url} name={item.name} />
-				}
-			</React.Fragment>
+			<div className="overlay-split ml-auto mr-auto" key={'overlay-parent-' + index}>
+				{subMenu}
+			</div>
 		)
+
 	});
 
 
@@ -176,9 +191,16 @@ function Navbar() {
 				{isOverlayActive &&
 					<>
 						<div onClick={() => closeFullscreenNav()} style={{ position: 'absolute', top: '10px', right: '45px', fontSize: '60px', color: 'white', cursor: 'pointer' }}>&times;</div>
-						<div style={{ position: 'relative', top: '10%', width: '100%', textAlign: 'center' }}>
-							{menuCollection}
-						</div>
+						{isBreakpoint &&
+							<div style={{ position: 'relative', top: '10%', width: '100%', textAlign: 'center' }}>
+								{menuCollection}
+							</div>
+						}
+						{!isBreakpoint &&
+							<div style={{ position: 'relative', width: '65%', textAlign: 'center', display: 'flex', marginLeft: 'auto', marginRight: 'auto', marginTop: '25vh' }}>
+								{menuCollection}
+							</div>
+						}
 					</>
 				}
 			</div>
@@ -237,17 +259,17 @@ function Navbar() {
 									</Grid.Column>
 									<Grid.Column width={2}>
 									</Grid.Column>
-									<Grid.Column width={4}  style={{ height: '100%', width: '100%', verticalAlign: 'middle', paddingRight: '0' }}>
+									<Grid.Column width={4} style={{ height: '100%', width: '100%', verticalAlign: 'middle', paddingRight: '0' }}>
 										{/*<div className="float-right d-flex text-center justify-content-center" style={{height: '100%', width: '100%'}}>
 											<Button size="big" className="align-self-center" style={{}}>Meny</Button>
 										</div>*/}
-										<div>			
+										<div>
 											<Button size="big" className="float-right" style={{ marginTop: '12%', marginLeft: '6%' }} onClick={e => openFullscreenNav()}>Meny</Button>
 										</div>
 										<div>
-										<Link href={'/kontakt'}>
-											<Button size="big" className="float-right" style={{ marginTop: '12%' }} >Kontakt</Button>
-										</Link>
+											<Link href={'/kontakt'}>
+												<Button size="big" className="float-right" style={{ marginTop: '12%' }} >Kontakt</Button>
+											</Link>
 										</div>
 									</Grid.Column>
 								</>
