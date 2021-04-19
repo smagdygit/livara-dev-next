@@ -13,24 +13,24 @@ function App() {
 			date: '2021-05-05',
 			content: [
 				{
-					type: 'title',
-					data: 'Vi har skaffat en ny hemsida haha!'
-				},
-				{
 					type: 'image',
-					data: 'https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png'
+					data: 'https://i.imgur.com/zQCBmAx.png'
 				},
 				{
 					type: 'title',
-					data: 'Brödtext'
+					data: 'Byggd i React & Next med ett fokus på användarvänlighet'
 				},
 				{
 					type: 'text',
-					data: 'Ja men, typ, aa, ja. JA!'
+					data: 'Det har länge varit dags för ett nytt kapitel i Livaras online-befintlighet, och vi har under dem senaste månaderna jobbat hårt med att bygga upp en ny hemsida från grunden. Stort fokus har lagts på användarvänlighet och modern design, som vi har kombinerat för att ge den bästa hemsideupplevelsen vi kan. Vi kommer fortsätta att jobba med hemsidan framöver för att integrera ännu mer tekniker som kan hjälpa användaren att hitta den information den söker.'
+				},
+				{
+					type: 'title',
+					data: 'Framtida uppdateringar'
 				},
 				{
 					type: 'text',
-					data: '...o lite till, i en ny paragraph!'
+					data: 'Nu när vi har fått färdigt själva hemsidan fokuserar vi på att göra den ännu mer användarvänlig. Specifikt har vi kollat på textuppläsare för den som har svårare att läsa mindre texter, och även globala översättningar för dem som vill läsa informationen på ett språk annat än svenska.'
 				},
 				{
 					type: 'link',
@@ -46,7 +46,10 @@ function App() {
 		const content = item.content.map((subItem, subIndex) => {
 			if (subItem.type === 'title') {
 				return(
+					<>
+					<br />
 					<h2 key={subIndex}>{subItem.data}</h2>
+					</>
 				)
 			}
 			if (subItem.type === 'image') {

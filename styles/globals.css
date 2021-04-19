@@ -14,6 +14,9 @@ body {
   background-attachment: scroll, fixed !important;
 }
 
+p, a {
+  font-size: 17px;
+}
 
 a {
   color: inherit;
