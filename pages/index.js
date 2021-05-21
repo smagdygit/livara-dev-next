@@ -33,15 +33,20 @@ function Mainpage() {
 			</Head>
 			<center>
 				<h2>
-					Välj din avdelning
-					</h2>
+					Varmt välkommen till Livara Omsorg.
+				</h2>
 				<Divider />
 			</center>
 			<Grid columns={2} divided padded verticalAlign='middle'>
 				<Grid.Row className="m-0 pt-0">
-					<Thumbnail name="Hemtjänst" url="../hemtjanst/" alt="Hemtjänst" image="url('https://images.pexels.com/photos/3733929/pexels-photo-3733929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')" />
+					<Thumbnail name="Vill du bli kund?" url="/hemtjanst/bli-kund/" alt="Bli Kund" image="url('https://images.pexels.com/photos/3733929/pexels-photo-3733929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')" />
 					<div style={{ width: '5%' }} />
-					<Thumbnail name="Assistans" url="../assistans/" alt="Assistans" image="url('https://images.unsplash.com/photo-1495433983223-7ac06157ca62?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')" />
+					<Thumbnail name="Hur fungerar hemtjänst?" url="/hemtjanst/hur-fungerar-det/" alt="Hur Fungerar Det" image="url('https://images.unsplash.com/photo-1495433983223-7ac06157ca62?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')" />
+				</Grid.Row>
+				<Grid.Row className="m-0 pt-0">
+					<Thumbnail name="Hur jobbar vi på Livara?" url="/hemtjanst/hur-jobbar-vi/" alt="Hur Jobbar Vi" image="url('https://images.pexels.com/photos/3733929/pexels-photo-3733929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')" />
+					<div style={{ width: '5%' }} />
+					<Thumbnail name="Tilläggstjänster" url="/hemtjanst/tillaggstjanster/" alt="Tilläggstjänster" image="url('https://images.unsplash.com/photo-1495433983223-7ac06157ca62?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80')" />
 				</Grid.Row>
 			</Grid>
 			<br />
@@ -49,10 +54,16 @@ function Mainpage() {
 			<div className="container">
 				<div className="mb-5">
 					<h3>
-						Välkommen till oss på Livara!
+						Hej!
 				</h3>
-					<p>Vi tycker att du har rätt till en fungerande vardag på dina villkor. Vårt mål på Livara är att du alltid ska känna dig trygg i ditt hem och känna att din integritet respekteras. Därför är dina önskemål och behov vår prioritering. Tillsammans skapar vi en anpassad vård för just dig.</p>
-					<p>Vi har alla våra yrkesbakgrunder i att arbeta med människor och socialt arbete i olika former. Tillsammans har vi många års erfarenhet inom den offentliga sektorn och landstinget. Vi har arbetat inom vård och hemtjänst, socialtjänst, funktionshinder, rättspsykiatrin, barn och ungdomar i utsatthet, metodutveckling och med bemanning av personal inom olika kommunala sektorer.</p>
+					<p>Vad roligt att du hittat hit. Vi på Livara omsorg erbjuder omsorg av högsta kvalité i alla dess former. Livara omsorg är ett privat omsorgsföretag som blivit godkända att utföra omsorg av Göteborgs stad. Verksamheten startade i början av 2019 och har växt explosionsartat sedan dess. Nu erbjuder vi hemtjänst i stora delar av Göteborg, däribland Hisingen, Angered och Östra Göteborg. Är du osäker på om vi utför hemtjänst i ditt område? Kontakta oss gärna då så berättar vi mer! </p>
+					<p>I perioder behöver vi dock stoppa inflödet av nya kunder för att kunna kvalitetssäkra vår verksamhet och bibehålla den höga kvalité våra kunder är vana vid, och samtidigt rusta upp för en ny grupp kunder att få in i verksamheten med bästa resultat. I dessa perioder finns intagningslistor att skriva upp sig på för alla nya kunder som önskar uppstart. Listorna följs sedan upp och intagningen av nya kunder görs i tur och ordning. Men den som väntar på något gott, väntar aldrig för länge!</p>
+					<p>Just nu har vi kapacitet att ta emot nya kunder och det går därför att göra en ansökan via formuläret under fliken ”vill du bli kund?” alternativt ringa in så får du den hjälp du önskar.</p>
+					<p>Kolla gärna vidare i andra avsnitt på hemsidan för mer information om oss och våra tjänster. Detta gör du enklast genom att välja det ämne du önskar läsa mer om med knappvalen ovan. Tveka inte på att kontakta oss för vidare information eller en kort pratstund.</p>
+					<p>Trevlig dag!</p>
+					<br />
+					<p>Med kärlek och glada hälsningar</p>
+					<p>Livara omsorg</p> 
 				</div>
 				<div className="mb-5">
 					<h3>

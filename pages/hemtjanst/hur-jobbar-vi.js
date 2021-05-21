@@ -18,9 +18,25 @@ function App() {
 				<Divider />
 				<br />
 			</center>
-			<div style={{ maxWidth: '500px' }}>
-				<h4>Ja du..</h4>
-				<p>Effektivt, hoppas jag.</p>
+			<div>
+				<h3>Hur jobbar vi på Livara?</h3>
+				<p>På Livara omsorg är vi måna om ditt välmående och har därför starka värdegrunder för att optimera utförandet hos dig. Vi arbetar aktivt med utveckling och uppföljning av våra värdegrunder och garanterar dig som kund ett anmärkningsvärt bemötande.</p>
+				<br />
+				<h3>Integritet</h3>
+				<p>Det är viktigt att du som kund känner att din integritet respekteras. Vi tar hänsyn till din vilja och dina gränser. Du styr, vi stöttar. All personal på Livara omsorg omfattas dessutom av strikt sekretess, så att du som kund kan känna dig trygg i ditt hem.</p>
+				<br />
+				<h3>Hög kontinuitet</h3>
+				<p>På Livara är vi väl medvetna om hur viktigt det är med stabilitet och relationsskapande. Vi har därför utvecklat en metod som går ut på att varje kund har ett fåtal personer runt sig som fokusgrupp, beroende på hur mycket hemtjänst du som kund får utfört kan det variera mellan 1 - 4 personer. Detta skapar den nära relation som behövs i skapandet av trygghet och välmående i hemmet.</p>
+				<br />
+				<h3>Salutogent förhållningssätt</h3>
+				<p>Vi arbetar utifrån ett salutogent förhållningssätt med dig som kund. Det innebär att vi arbetar med att stärka dina förmågor och din känsla av självständighet i den dagliga livsföringen. Vi hjälper dig att stärka och behålla de styrkor och färdigheter du redan har och stöttar dig vid behov, så att du slipper bli fråntagen det du klarar av självständigt.</p>
+				<br />
+				<h3>Självbestämmande</h3>
+				<p>Du som kund är med och bestämmer hur planeringen och utförandet av hemtjänsten ska utföras. Du har alltid möjlighet att kontakta oss för att komma med synpunkter på hur du upplever utförandet, men vi följer även upp utförandet systematiskt och sporadiskt genom året, för att säkerställa att den högsta möjliga kvalité bibehålls hos dig som kund. 
+					Vårt högsta mål är att du som kund ska känna att du har möjligheten att få bestämma över din egen hemtjänst, för att känna självbestämmande och delaktighet i din vardag. Vi på Livara gör alltid vårt yttersta för att du som kund ska få det precis som du önskar, och i de fall det inte är möjligt kompromissar vi fram den näst bästa lösningen för dig till dina främsta önskemål går att uppfylla. Du är i trygga händer helt enkelt.
+				</p>
+
+
 			</div>
 			<div style={{height: 'auto'}} />
 		</>

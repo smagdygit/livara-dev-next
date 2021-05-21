@@ -222,8 +222,8 @@ function Navbar() {
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
 											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
 												<center>
-													<h1>Livara</h1>
-													<p>Vi Finns för Dig</p>
+													<h2>Livara Omsorg</h2>
+													<p>Omsorg På Dina Villkor</p>
 												</center>
 											</a>
 										</Link>
@@ -251,8 +251,8 @@ function Navbar() {
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
 											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
 												<div>
-													<h1>Livara Omsorg AB</h1>
-													<p>Hemtjänst och Assistans</p>
+													<h1>Livara Omsorg</h1>
+													<p>Omsorg På Dina Villkor</p>
 												</div>
 											</a>
 										</Link>
