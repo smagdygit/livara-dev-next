@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { Form, Button, TextArea, Divider, Input } from 'semantic-ui-react';
+import { Form, Button, TextArea, Divider, Input, Segment } from 'semantic-ui-react';
 import { React, useEffect, useState } from 'react';
 import Head from "next/head";
 
@@ -28,6 +28,7 @@ function Kontakt() {
 		content: 'Vänligen skriv en giltlig mejladress',
 		pointing: 'below',
 	};
+	const [sent, setSent] = useState(false);
 
 	function handleSubmit(e) {
 		e.preventDefault();
@@ -39,6 +40,8 @@ function Kontakt() {
 		const isEmailError = (email === undefined) ? emailErrorText : (email === '') ? emailErrorText : !validEmail ? emailErrorText : false;
 		setEmailError(isEmailError);
 
+		console.log(select);
+
 		if (!isNameError && !isEmailError) {
 			setLoading(true);
 			fetch('https://formspree.io/f/mayaybjg', {
@@ -49,7 +52,7 @@ function Kontakt() {
 				},
 				body: JSON.stringify({
 					_replyto: email,
-					area: `${JSON.stringify(select)}`,
+					area: `${select}`,
 					name: `${name}`,
 					message: `${text}`
 				})
@@ -59,12 +62,13 @@ function Kontakt() {
 					if (data.ok === false) {
 						setBigError(true);
 						setSmallError('404/500');
-					} else {*/
-						setName('');
-						setEmail('');
-						setText('');
-						setLoading(false);
-					})
+					} else {*/console.log(select);
+					setName('');
+					setEmail('');
+					setText('');
+					setLoading(false);
+					setSent(true);
+				})
 				/*})/*
 				.catch(error => {
 					setBigError(true);
@@ -85,6 +89,10 @@ function Kontakt() {
 		setEmailError((value === undefined) ? emailErrorText : (value === '') ? emailErrorText : !validEmail ? emailErrorText : false);
 	}
 
+	function changeSelect(e, val) {
+		setSelect(val.value);
+	}
+
 	return (
 		<>
 			<Head>
@@ -102,47 +110,58 @@ function Kontakt() {
 				<p>Telefonnummer: <a href="tel:072123456">072123456</a></p>
 				<p>Mejl: <a href="mailto:something@livara.se">something@livara.se</a></p>
 				<br />
-				{!bigError &&
-					<Form loading={loading}>
-						<h4>Område *</h4>
-						<Form.Select
-							required
-							fluid
-							options={options}
-							placeholder='Område'
-							defaultValue="övrigt"
-							onChange={(val) => setSelect(val)}
-						/>
-						<h4>Namn *</h4>
-						<Form.Field
-							required
-							control={Input}
-							id="form-input-control-first-name"
-							error={nameError}
-							placeholder='Namn'
-							value={name}
-							onChange={(e) => handleName(e.target.value)}
-						/>
-						<h4>Mejladress *</h4>
-						<Form.Field
-							required
-							control={Input}
-							id="form-input-control-error-email"
-							error={emailError}
-							placeholder='Din Mejladress'
-							value={email}
-							onChange={(e) => { handleEmail(e.target.value) }}
-						/>
-						<h4>Valfri Text *</h4>
-						<Form.Field
-							required
-							control={TextArea}
-							placeholder="Text"
-							value={text}
-							onChange={(e) => setText(e.target.value)}
-						/>
-						<Button type='submit' onClick={(e) => handleSubmit(e)}>Skicka</Button>
-					</Form>
+				{!sent &&
+					<>
+						{!bigError &&
+							<Form loading={loading}>
+								<h4>Område *</h4>
+								<Form.Select
+									required
+									fluid
+									options={options}
+									placeholder='Område'
+									defaultValue="övrigt"
+									onChange={(e, val) => changeSelect(e, val)}
+								/>
+								<h4>Namn *</h4>
+								<Form.Field
+									required
+									control={Input}
+									id="form-input-control-first-name"
+									error={nameError}
+									placeholder='Namn'
+									value={name}
+									onChange={(e) => handleName(e.target.value)}
+								/>
+								<h4>Mejladress *</h4>
+								<Form.Field
+									required
+									control={Input}
+									id="form-input-control-error-email"
+									error={emailError}
+									placeholder='Din Mejladress'
+									value={email}
+									onChange={(e) => { handleEmail(e.target.value) }}
+								/>
+								<h4>Valfri Text *</h4>
+								<Form.Field
+									required
+									control={TextArea}
+									placeholder="Text"
+									value={text}
+									onChange={(e) => setText(e.target.value)}
+								/>
+								<Button type='submit' onClick={(e) => handleSubmit(e)}>Skicka</Button>
+							</Form>
+						}
+					</>
+				}
+				{sent &&
+					<Segment style={{backgroundColor: 'rgba(0,0,0,0.03)'}}>
+						<center>
+							<h1 className="m-5">Meddelandet har skickats!</h1>
+						</center>
+					</Segment>
 				}
 				{bigError &&
 					<center>

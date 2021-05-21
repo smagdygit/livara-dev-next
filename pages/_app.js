@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<meta http-equiv="content-language" content="sv" />
+				<meta httpEquiv="content-language" content="sv" />
 			</Head>
 			<div>
 				<Navbar>
