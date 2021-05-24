@@ -10,7 +10,7 @@ function App() {
 	const reviews = [
 		{
 			title: 'Ny Hemsida',
-			date: '2021-05-05',
+			date: '2021-05-24',
 			content: [
 				{
 					type: 'image',

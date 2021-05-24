@@ -107,10 +107,10 @@ function Navbar() {
 			},
 			{
 				type: 'link',
-				url: '/hemtjanst/recensioner',
-				name: 'Recensioner om Livara',
+				url: '/hemtjanst/tillaggstjanster',
+				name: 'Tilläggstjänster',
 			},
-		],
+		],/*
 		[
 			{
 				type: 'title',
@@ -136,7 +136,7 @@ function Navbar() {
 				url: '/assistans/recensioner',
 				name: 'Recensioner om Livara',
 			},
-		],
+		],*/
 		[
 			{
 				type: 'title',
@@ -204,7 +204,7 @@ function Navbar() {
 					</>
 				}
 			</div>
-			<header style={{ backgroundColor: 'rgb(245, 245, 245, 0.6)' }} className="mb-2">
+			<header style={{ backgroundColor: 'rgb(245, 245, 245, 0.0)' }} className="mb-5">
 				<center>
 					<Grid padded centered verticalAlign='middle' style={{ maxWidth: '1100px', height: '110px' }}>
 						<Grid.Row style={{ height: '100%' }} className="p-0">
@@ -238,11 +238,11 @@ function Navbar() {
 							}
 							{!isBreakpoint &&
 								<>
-									<Grid.Column width={2} className="m-0 p-0" style={{ cursor: 'pointer' }}>
+									<Grid.Column width={2} className="m-0 p-2" style={{ cursor: 'pointer' }}>
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
 											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
 												<div>
-													<Image src="/livara_logga_0.png" size="tiny" alt="Livara Logga" className="m-0" />
+													<Image src="/livara_logga_0.png" alt="Livara Logga" className="m-0" />
 												</div>
 											</a>
 										</Link>
@@ -276,7 +276,7 @@ function Navbar() {
 							}
 						</Grid.Row>
 					</Grid>
-					<Divider className="mt-0" />
+					{/*<Divider className="mt-0" />*/}
 				</center>
 			</header>
 		</div>

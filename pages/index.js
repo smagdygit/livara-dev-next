@@ -79,7 +79,7 @@ function Mainpage() {
 					<p>Seniorval är en sökmotor där du kan se diverse hemtjänst i sverige, och självklart har vi även vår egen sida där om ni vill jämföra oss med alternativen.</p>
 					<a href={'https://www.seniorval.se/hemtjanst/goteborg/livara-hemtjänst'}>Klicka här för att komma till seniorval</a>
 				</div>
-				<SlidingReviews />
+				{/*<SlidingReviews />*/}
 			</div>
 		</>
 	);
