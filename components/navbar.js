@@ -204,7 +204,7 @@ function Navbar() {
 					</>
 				}
 			</div>
-			<header style={{ backgroundColor: 'rgb(245, 245, 245, 0.0)' }} className="mb-5">
+			<header style={{ backgroundColor: 'rgb(245, 245, 245, 0.0)' }} className=''>
 				<center>
 					<Grid padded centered verticalAlign='middle' style={{ maxWidth: '1100px', height: '110px' }}>
 						<Grid.Row style={{ height: '100%' }} className="p-0">

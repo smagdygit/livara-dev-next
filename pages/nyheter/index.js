@@ -48,35 +48,35 @@ function App() {
 				return(
 					<>
 					<br />
-					<h2 key={subIndex}>{subItem.data}</h2>
+					<h2 key={'subsection' + subIndex}>{subItem.data}</h2>
 					</>
 				)
 			}
 			if (subItem.type === 'image') {
 				return(
-					<Image key={subIndex} src={subItem.data} className="mt-4 mb-4"></Image>
+					<Image key={'subsection' + subIndex} src={subItem.data} className="mt-4 mb-4"></Image>
 				)
 			}
 			if (subItem.type === 'text') {
 				return(
-					<p key={subIndex}>{subItem.data}</p>
+					<p key={'subsection' + subIndex}>{subItem.data}</p>
 				)
 			}
 			if (subItem.type === 'link') {
 				return(
-					<Link key={subIndex} href={subItem.data}>{subItem.text}</Link>
+					<Link key={'subsection' + subIndex} href={subItem.data}>{subItem.text}</Link>
 				)
 			}
 		})
 
 		return (
-			<>
-				<h1 key={index}>{item.title}</h1>
+			<div key={'section' + index}>
+				<h1>{item.title}</h1>
 				<h4 style={{color: 'gray'}}>{item.date}</h4>
 				<br />
 				{content}
 				<br />
-			</>
+			</div>
 		);
 	})
 

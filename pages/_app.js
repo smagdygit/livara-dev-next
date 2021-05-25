@@ -7,6 +7,8 @@ import Navbar from '../components/navbar';
 import Link from 'next/link';
 import { Image } from 'semantic-ui-react';
 import Head from "next/head";
+import { useRouter } from 'next/router';
+
 
 
 
@@ -22,6 +24,7 @@ function MyApp({ Component, pageProps }) {
 			<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }} className="mb-0">Kontakt</p>
 		</a>
 	));
+	const router = useRouter()
 
 	return (
 		<>
@@ -31,9 +34,15 @@ function MyApp({ Component, pageProps }) {
 			<div>
 				<Navbar>
 				</Navbar>
-				<div className="container mt-4" style={{ minHeight: 'calc(100vh - 431px)' }}>
+				{(router.pathname !== '/') &&
+					<div className="container mt-4" style={{ minHeight: 'calc(100vh - 431px)' }}>
+						<Component {...pageProps} />
+					</div>
+				}
+				{(router.pathname === '/') &&
 					<Component {...pageProps} />
-				</div>
+				}
+
 				<footer style={{ backgroundColor: 'rgb(0, 0, 0, 0.9)', width: '' }} className="mt-5">
 					<center className="p-4">
 						<div className="w-25">
