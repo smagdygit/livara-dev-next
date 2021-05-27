@@ -77,7 +77,7 @@ function Navbar() {
 	const MenuElement = ((props) => {
 		return (
 			<Link href={props.url}>
-				<StyledOverlayElement href={props.url} onClick={() => closeFullscreenNav()}>
+				<StyledOverlayElement href={props.url} onClick={() => closeFullscreenNav()} style={props.special !== undefined ? {fontSize: '35px', color: 'lightgreen'} : {}}>
 					{props.name}
 				</StyledOverlayElement>
 			</Link>
@@ -110,6 +110,12 @@ function Navbar() {
 				url: '/hemtjanst/tillaggstjanster',
 				name: 'Tilläggstjänster',
 			},
+			{
+				type: 'link',
+				url: '/kontakt',
+				name: 'Kontakt',
+				special: true,
+			}
 		],/*
 		[
 			{
@@ -136,7 +142,7 @@ function Navbar() {
 				url: '/assistans/recensioner',
 				name: 'Recensioner om Livara',
 			},
-		],*/
+		],*//*
 		[
 			{
 				type: 'title',
@@ -157,7 +163,7 @@ function Navbar() {
 				url: '/nyheter',
 				name: 'Nyheter',
 			},
-		]
+		]*/
 	];
 
 	const menuCollection = menuData.map((item, index) => {
@@ -168,7 +174,14 @@ function Navbar() {
 						<StyledOverlayElementHeader>{subItem.name}</StyledOverlayElementHeader>
 					}
 					{subItem.type === 'link' &&
-						<MenuElement url={subItem.url} name={subItem.name} />
+						<>
+							{subItem.special !== undefined &&
+								<MenuElement url={subItem.url} name={subItem.name} special={true}/>
+							}
+							{subItem.special === undefined &&
+								<MenuElement url={subItem.url} name={subItem.name} />
+							}
+						</>
 					}
 				</React.Fragment>
 			)
@@ -211,7 +224,7 @@ function Navbar() {
 							{isBreakpoint &&
 								<>
 									<Grid.Column width={4} className="p-3">
-										<a href="tel:072345678" style={{ textDecoration: 'none', color: 'black' }}>
+										<a href="tel:0738350213" style={{ textDecoration: 'none', color: 'black' }}>
 											<center>
 												<Icon style={{ color: 'green' }} name="phone" size="big" />
 												<p>Ring</p>
@@ -247,28 +260,30 @@ function Navbar() {
 											</a>
 										</Link>
 									</Grid.Column>
-									<Grid.Column width={8} style={{ cursor: 'pointer' }}>
+									<Grid.Column width={6} style={{ cursor: 'pointer' }}>
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
 											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
 												<div>
-													<h1>Livara Omsorg</h1>
-													<p>Omsorg På Dina Villkor</p>
+													<h1 style={{fontSize: '3em'}}>Livara Omsorg</h1>
+													<p style={{fontSize: '1.3em'}}>Omsorg På Dina Villkor</p>
 												</div>
 											</a>
 										</Link>
 									</Grid.Column>
 									<Grid.Column width={2}>
 									</Grid.Column>
-									<Grid.Column width={4} style={{ height: '100%', width: '100%', verticalAlign: 'middle', paddingRight: '0' }}>
+									<Grid.Column width={6} style={{ height: '100%', width: '100%', verticalAlign: 'middle', paddingRight: '0' }}>
 										{/*<div className="float-right d-flex text-center justify-content-center" style={{height: '100%', width: '100%'}}>
 											<Button size="big" className="align-self-center" style={{}}>Meny</Button>
 										</div>*/}
 										<div>
-											<Button size="big" className="float-right" style={{ marginTop: '12%', marginLeft: '6%' }} onClick={e => openFullscreenNav()}>Meny</Button>
+											<Button size="huge" color="brown" className="float-right" style={{ marginTop: '7%', marginLeft: '6%' }} onClick={e => openFullscreenNav()}>Meny</Button>
 										</div>
 										<div>
 											<Link href={'/kontakt'}>
-												<Button size="big" className="float-right" style={{ marginTop: '12%' }} >Kontakt</Button>
+												<a href={'/kontakt'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
+													<Button icon color="blue" labelPosition="left" size="huge" className="float-right" style={{ marginTop: '7%' }} >Kontakta Oss<Icon name='mail' /></Button>
+												</a>
 											</Link>
 										</div>
 									</Grid.Column>

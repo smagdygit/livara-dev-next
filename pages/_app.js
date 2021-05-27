@@ -51,18 +51,18 @@ function MyApp({ Component, pageProps }) {
 							</Link>
 						</div>
 						<br />
-						<div style={{ width: '50%', color: 'white' }} className="d-flex justify-content-center">
+						<div style={{ width: '50%', color: 'white', fontSize: '' }} className="d-flex justify-content-center">
 							<Link href={'/kontakt/'} style={{ width: 'auto' }}>
-								<a style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }} className="mb-0">Kontakt</a>
+								<a style={{ textDecoration: 'none', color: 'white', cursor: 'pointer', fontSize: '' }} className="mb-0">Kontakt</a>
 							</Link>
 							&nbsp;|&nbsp;
 							<a href={'https://seniorval.se/hemtjanst/goteborg/livara-hemtjänst/'} style={{ textDecoration: 'none', color: 'white' }}>
-								<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }}>Seniorval</p>
+								<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer', fontSize: '' }}>Seniorval</p>
 							</a>
-							&nbsp;|&nbsp;
+							{/*&nbsp;|&nbsp;
 							<a href={'https://www.allabolag.se/5591696603/livara-hemtjänst-ab'} style={{ textDecoration: 'none', color: 'white' }}>
 								<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer' }}>Allabolag</p>
-							</a>
+							</a>*/}
 						</div>
 						<br />
 						<p className="text-white">Livara © 2021</p>

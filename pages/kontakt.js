@@ -1,13 +1,13 @@
 /* eslint-disable */
-import { Form, Button, TextArea, Divider, Input, Segment } from 'semantic-ui-react';
+import { Form, Button, TextArea, Divider, Input, Segment, Icon } from 'semantic-ui-react';
 import { React, useEffect, useState } from 'react';
 import Head from "next/head";
 
 const options = [
-	{ key: 'hemtjänst', text: 'Hemtjänst', value: 'hemtjänst' },
-	{ key: 'assistans', text: 'Assistans', value: 'assistans' },
+	{ key: 'hisingen', text: 'Hisingen', value: 'hisingen' },
+	{ key: 'angered', text: 'Angered', value: 'angered' },
+	{ key: 'bergsjön-kortedala', text: 'Bergsjön & Kortedala', value: 'bergsjön-kortedala' },
 	{ key: 'övrigt', text: 'Övrigt', value: 'övrigt' },
-	{ key: 'b2b', text: 'B2B', value: 'b2b' },
 ]
 
 function Kontakt() {
@@ -35,10 +35,12 @@ function Kontakt() {
 
 		const isNameError = (name === undefined) ? nameErrorText : (name === '') ? nameErrorText : false;
 		setNameError(isNameError);
-		const pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+		/*const pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 		const validEmail = (!pattern.test(email)) ? false : true;
 		const isEmailError = (email === undefined) ? emailErrorText : (email === '') ? emailErrorText : !validEmail ? emailErrorText : false;
-		setEmailError(isEmailError);
+		setEmailError(isEmailError);*/
+		setEmailError(false);
+		const isEmailError = false;
 
 		console.log(select);
 
@@ -51,10 +53,11 @@ function Kontakt() {
 					'Content-Type': 'application/json',
 				},
 				body: JSON.stringify({
-					_replyto: email,
+					_replyto: 'support@livara.se',
 					area: `${select}`,
 					name: `${name}`,
-					message: `${text}`
+					message: `${text}`,
+					telefon: `${email}`
 				})
 			})
 				.then(response => response.json())
@@ -82,12 +85,18 @@ function Kontakt() {
 		setNameError((value === undefined) ? nameErrorText : (value === '') ? nameErrorText : false);
 	}
 
+	function handlePhone(value) {
+		setEmail(value);
+		setEmailError((value === undefined) ? nameErrorText : (value === '') ? nameErrorText : false);
+	}
+
+	/*
 	function handleEmail(value) {
 		setEmail(value);
 		var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 		const validEmail = (!pattern.test(value)) ? false : true;
 		setEmailError((value === undefined) ? emailErrorText : (value === '') ? emailErrorText : !validEmail ? emailErrorText : false);
-	}
+	}*/
 
 	function changeSelect(e, val) {
 		setSelect(val.value);
@@ -96,19 +105,27 @@ function Kontakt() {
 	return (
 		<>
 			<Head>
-				<title>Kontakt</title>
+				<title>Kontakta oss på Livara Omsorg!</title>
 			</Head>
 			<div>
 				<center>
 					<h2>
-						Kontakt
+						Kontakta oss på Livara Omsorg!
 				</h2>
 				</center>
 				<Divider />
 				<br />
-				<h3>Kontaktinformation</h3>
-				<p>Telefonnummer: <a href="tel:072123456">072123456</a></p>
-				<p>Mejl: <a href="mailto:something@livara.se">something@livara.se</a></p>
+				<h2><b>Kontaktinformation</b></h2>
+				<a href={'tel:0738350213'}>
+					<Button size='massive' color='green' icon labelPosition='left'>Ring 0738-350213<Icon name='phone' /></Button>
+				</a>
+				<br />
+				<br />
+				<a href={'mailto:support@livara.se'}>
+					<Button size='massive' color="blue" icon labelPosition='left'>Mejla support@livara.se<Icon name='mail' /></Button>
+				</a>
+				<br />
+				<br />
 				<br />
 				{!sent &&
 					<>
@@ -133,17 +150,17 @@ function Kontakt() {
 									value={name}
 									onChange={(e) => handleName(e.target.value)}
 								/>
-								<h4>Mejladress *</h4>
+								<h4>Telefonnummer *</h4>
 								<Form.Field
 									required
 									control={Input}
-									id="form-input-control-error-email"
+									id=""
 									error={emailError}
-									placeholder='Din Mejladress'
+									placeholder='Telefonnummer'
 									value={email}
-									onChange={(e) => { handleEmail(e.target.value) }}
+									onChange={(e) => { handlePhone(e.target.value) }}
 								/>
-								<h4>Valfri Text *</h4>
+								<h4>Valfri Text</h4>
 								<Form.Field
 									required
 									control={TextArea}
@@ -151,7 +168,7 @@ function Kontakt() {
 									value={text}
 									onChange={(e) => setText(e.target.value)}
 								/>
-								<Button type='submit' onClick={(e) => handleSubmit(e)}>Skicka</Button>
+								<Button size="big" type='submit' onClick={(e) => handleSubmit(e)}>Skicka</Button>
 							</Form>
 						}
 					</>

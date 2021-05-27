@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { Grid, Icon, Image, Segment, Card, Divider } from 'semantic-ui-react';
+import { Grid, Icon, Image, Segment, Card, Divider, Button } from 'semantic-ui-react';
 import Thumbnail from '@/components/Thumbnail';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -41,14 +41,14 @@ function Mainpage() {
 					</center>
 					<Grid columns={2} divided padded verticalAlign='middle'>
 						<Grid.Row className="m-0 pt-0">
-							<Thumbnail name="Vill du bli kund?" url="/hemtjanst/bli-kund/" alt="Bli Kund" image="url('https://images.pexels.com/photos/3733929/pexels-photo-3733929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')" />
+							<Thumbnail position="top left" name="Vill du bli kund?" url="/hemtjanst/bli-kund/" alt="Bli Kund" image="url('https://images.pexels.com/photos/3733929/pexels-photo-3733929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')" />
 							<div style={{ width: '5%' }} />
-							<Thumbnail name="Hur fungerar hemtjänst?" url="/hemtjanst/hur-fungerar-det/" alt="Hur Fungerar Det" image="url('hur-fungerar-det.png')" />
+							<Thumbnail position="center" name="Hur fungerar hemtjänst?" url="/hemtjanst/hur-fungerar-det/" alt="Hur Fungerar Det" image="url('mountain.jpg')" />
 						</Grid.Row>
 						<Grid.Row className="m-0 pt-0">
-							<Thumbnail name="Hur jobbar vi på Livara?" url="/hemtjanst/hur-jobbar-vi/" alt="Hur Jobbar Vi" image="url('/hur-jobbar-vi.png')" />
+							<Thumbnail position="center" name="Hur jobbar vi på Livara?" url="/hemtjanst/hur-jobbar-vi/" alt="Hur Jobbar Vi" image="url('/autumn.jpg')" />
 							<div style={{ width: '5%' }} />
-							<Thumbnail name="Tilläggstjänster" url="/hemtjanst/tillaggstjanster/" alt="Tilläggstjänster" image="url('/tillaggstjanster.png')" />
+							<Thumbnail position="center" name="Tilläggstjänster" url="/hemtjanst/tillaggstjanster/" alt="Tilläggstjänster" image="url('/bigtree.jpg')" />
 						</Grid.Row>
 					</Grid>
 				</div>
@@ -72,25 +72,36 @@ function Mainpage() {
 							<p>Livara omsorg</p>
 						</div>
 						<div className="mb-5">
-							<h3>
-								Vill du ha mer info om Livaras bakgrund?
-							</h3>
-							<p>Då är du välkommen att maila dina frågor via vårt formulär eller ringa till vår verksamhetsansvarig.</p>
-							<Link href={'/kontakt/'}>Klicka här för att komma till kontaktsidan</Link>
+							<Link href={'/kontakt'}>
+								<a href={'/kontakt'}>
+									<Button size='big' color="brown" icon labelPosition='left'>Kontakta oss på Livara Omsorg<Icon name='mail' /></Button>
+								</a>
+							</Link>
+							<br />
+							<br />
+							<a href={'tel:0738350213'}>
+								<Button size='big' color='green' icon labelPosition='left'>Ring 0738-350213<Icon name='phone' /></Button>
+							</a>
 						</div>
 						<div className="mb-5">
 							<h3>
-								Besök Livara på Seniorval
+								Livara på Seniorval!
 							</h3>
-							<p>Seniorval är en sökmotor där du kan se diverse hemtjänst i sverige, och självklart har vi även vår egen sida där om ni vill jämföra oss med alternativen.</p>
-							<a href={'https://www.seniorval.se/hemtjanst/goteborg/livara-hemtjänst'}>Klicka här för att komma till seniorval</a>
+							<p>På seniorval hittar du samtliga alternativ för dig som kund inom både hemtjänst och andra tjänster, där kan du som kund jämföra dina olika alternativ.</p>
+							<p>Behöver du hjälp med jämförelsen, eller undrar hur seniorval fungerar? Tveka inte på att kontakta oss eller vår samarbetspartner Seniorval för mer information, så att du kan känna dig trygg i ditt val.</p>
+							<a href={'https://www.seniorval.se/hemtjanst/goteborg/livara-hemtjänst'}>
+								<Button size='big' color='blue' icon labelPosition='left'>
+									Besök Seniorval
+									<Icon name='globe' />
+								</Button>
+							</a>
 						</div>
-						<div className="mb-5">
+						{/*<div className="mb-5">
 							<h3>
 								Nyheter & Blog
 							</h3>
 							<a href={'/nyheter/'}>Klicka här för uppdateringar kring Livara</a>
-						</div>
+						</div>*/}
 						{/*<SlidingReviews />*/}
 					</div>
 				</div>

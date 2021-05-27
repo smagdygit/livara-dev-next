@@ -42,7 +42,7 @@ function Thumbnail(props) {
 	return (
 		<>
 			{!isBreakpoint &&
-				<Grid.Column className="p-0" alt={props.alt} style={{ cursor: 'pointer', backgroundSize: '100%', backgroundRepeat: 'no-repeat', backgroundImage: props.image, width: '47.5%', height: '100%', margin: '0', borderRadius: '10px' }}>
+				<Grid.Column className="p-0" alt={props.alt} style={{ cursor: 'pointer', backgroundPosition: props.position ,backgroundSize: '100%', backgroundRepeat: 'no-repeat', backgroundImage: props.image, width: '47.5%', height: '100%', margin: '0', borderRadius: '10px' }}>
 					<Link href={props.url}>
 						<a href={props.url}>
 							<center>
