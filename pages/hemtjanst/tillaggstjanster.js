@@ -21,7 +21,7 @@ function App() {
 			<div>
 				<h3>Tilläggstjänster</h3>
 				<p>Behöver du hjälp med något utöver din vanliga hemtjänst? 
-					Inga bekymmer, vi hjälper dig. Här nedan listar vi förslag på extra tjänster du kan köpa hos oss på Livara, kostnaden är densamma som för din vanliga hemtjänst med RUT-avdrag inkluderat! 
+					Inga bekymmer, vi hjälper dig. Här nedan listar vi <u>förslag</u> på extra tjänster du kan köpa hos oss på Livara, kostnaden är densamma som för din vanliga hemtjänst (214kr/h) med RUT-avdrag inkluderat! Priset är detsamma, oavsett utförande. 
 				</p>
 				<ul style={{fontSize: '1.3rem'}}>
 					<li>Fönsterputs</li>
@@ -31,7 +31,7 @@ function App() {
 					<li>Hemtjänst - Extra hjälp i hemmet eller med ärenden utanför hemmet.</li>
 				</ul>
 				<br />
-				<p>Behöver du en extratjänst utöver din vanliga hemtjänst, vänligen hör av dig till oss så förklarar vi mer om tjänsterna, dess utföranden, och om det finns möjlighet att planera in i dem i din vanliga hemtjänst utan extra kostnader.</p>
+				<p>Behöver du en extratjänst utöver din vanliga hemtjänst? Vänligen hör av dig till oss så förklarar vi mer om tjänsterna och dess utföranden, samt om det finns möjlighet att planera in i dem i din redan existerande hemtjänst utan extra kostnader. Hörs snart!</p>
 
 
 			</div>

@@ -32,8 +32,8 @@ function App() {
 				<p>Vi arbetar utifrån ett salutogent förhållningssätt med dig som kund. Det innebär att vi arbetar med att stärka dina förmågor och din känsla av självständighet i den dagliga livsföringen. Vi hjälper dig att stärka och behålla de styrkor och färdigheter du redan har och stöttar dig vid behov, så att du slipper bli fråntagen det du klarar av självständigt.</p>
 				<br />
 				<h3>Självbestämmande</h3>
-				<p>Du som kund är med och bestämmer hur planeringen och utförandet av hemtjänsten ska utföras. Du har alltid möjlighet att kontakta oss för att komma med synpunkter på hur du upplever utförandet, men vi följer även upp utförandet systematiskt och sporadiskt genom året, för att säkerställa att den högsta möjliga kvalité bibehålls hos dig som kund. 
-					Vårt högsta mål är att du som kund ska känna att du har möjligheten att få bestämma över din egen hemtjänst, för att känna självbestämmande och delaktighet i din vardag. Vi på Livara gör alltid vårt yttersta för att du som kund ska få det precis som du önskar, och i de fall det inte är möjligt kompromissar vi fram den näst bästa lösningen för dig till dina främsta önskemål går att uppfylla. Du är i trygga händer helt enkelt.
+				<p>Du som kund är med och bestämmer hur planeringen och utförandet av hemtjänsten ska utföras. Du har alltid möjlighet att kontakta oss för att komma med synpunkter på hur du upplever utförandet och om du har eventuella förslag till förändring, vi följer även upp utförandet under årets gång för att säkerställa att den högsta möjliga kvalité bibehålls hos dig som kund.</p>
+				<p>Vi på Livara gör alltid vårt yttersta för att du som kund ska få det precis som du önskar. I de fall det inte är möjligt kompromissar vi fram den näst bästa lösningen för dig till dina främsta önskemål går att uppfylla. Du är i trygga händer helt enkelt.
 				</p>
 
 
