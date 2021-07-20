@@ -60,7 +60,7 @@ function Mainpage() {
 					<div className="container" style={{ margin: '0', borderRadius: '10px' }}>
 						<div className="mb-5">
 							<h3>
-								Hej!
+								Hej
 							</h3>
 							<p>Vad roligt att du hittat hit. Vi på Livara omsorg erbjuder omsorg av högsta kvalité i alla dess former. Livara omsorg är ett privat omsorgsföretag som blivit godkända att utföra omsorg av Göteborgs stad. Verksamheten startade i början av 2019 och har växt explosionsartat sedan dess. Nu erbjuder vi hemtjänst i stora delar av Göteborg, däribland Hisingen, Angered och Östra Göteborg. Är du osäker på om vi utför hemtjänst i ditt område? Kontakta oss gärna så berättar vi mer! </p>
 							<p>I perioder behöver vi dock stoppa inflödet av nya kunder för att kunna kvalitetssäkra vår verksamhet och bibehålla den höga kvalité våra kunder är vana vid, och samtidigt rusta upp för en ny grupp kunder att få in i verksamheten med bästa resultat. I dessa perioder finns intagningslistor att skriva upp sig på för alla nya kunder som önskar uppstart. Listorna följs sedan upp och intagningen av nya kunder görs i tur och ordning, men den som väntar på något gott, väntar aldrig för länge!</p>
@@ -85,7 +85,7 @@ function Mainpage() {
 						</div>
 						<div className="mb-5">
 							<h3>
-								Livara på Seniorval!
+								Livara på Seniorval
 							</h3>
 							<p>På seniorval hittar du samtliga alternativ för dig som kund inom både hemtjänst och andra tjänster, där kan du som kund jämföra dina olika alternativ.</p>
 							<p>Behöver du hjälp med jämförelsen, eller undrar hur seniorval fungerar? Tveka inte på att kontakta oss eller vår samarbetspartner Seniorval för mer information, så att du kan känna dig trygg i ditt val.</p>
