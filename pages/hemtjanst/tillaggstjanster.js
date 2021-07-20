@@ -13,7 +13,7 @@ function App() {
 			</Head>
 			<center>
 				<h2>
-					Tilläggstjänster
+					<b>Tilläggstjänster</b>
 				</h2>
 				<Divider />
 				<br />
@@ -28,7 +28,7 @@ function App() {
 					<li>Städning</li>
 					<li>Ledsagning</li>
 					<li>Städning av vitvaror</li>
-					<li>Hemtjänst - Extra hjälp i hemmet eller med ärenden utanför hemmet.</li>
+					<li>Hemtjänst - Extra hjälp i hemmet eller med ärenden utanför hemmet</li>
 				</ul>
 				<br />
 				<p>Behöver du en extratjänst utöver din vanliga hemtjänst, vänligen hör av dig till oss så förklarar vi mer om tjänsterna, dess utföranden, och om det finns möjlighet att planera in i dem i din vanliga hemtjänst utan extra kostnader.</p>
