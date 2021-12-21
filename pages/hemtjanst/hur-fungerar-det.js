@@ -38,11 +38,11 @@ function App() {
 				<p>En tredje tjänst inom hemtjänst kallas avlösning och är också avgiftsfri. Avlösning är till för när du som kund behöver hjälp med avlösning av en annan person i ditt hushåll medan du gör andra ärenden eller vilar upp dig på annat håll. Avlösningen möjliggör egen tid för dig som vanligtvis sköter om en annan person i hemmet.
 				</p>
 				<p>Vill du söka hemtjänst, ledsagning eller avlösning gör du detta hos din biståndsbedömare på ditt lokala socialtjänstkontor, skriftligt eller över telefon.          
-				Du förklarar dina behov och biståndsbedömaren avgör vad som anses vara rimligt med tid för att tillgodose dina behov. Vill du överklaga beslutet hjälper din biståndsbedömare dig med det också, eller så hjälper vi på Livara omsorg dig om det känns bättre.
+				Du förklarar dina behov och biståndsbedömaren avgör vad som anses vara rimligt med tid för att tillgodose dina behov. Vill du överklaga beslutet hjälper din biståndsbedömare dig med det också.
 				</p>
 				<br />
 				<h3>Vad kostar hemtjänst?</h3>
-				<p>Kostnader för hemtjänst bestäms av Socialstyrelsen och är samma för både kommunala och privata utförare.</p>
+				<p>Det är kommunen som reglerar avgifterna för din hemtjänst, och kostnaden kan variera. Vänd dig till din biståndsbedömare för information om vad just din hemtjänst hade kostat dig. Behöver du hjälp att nå din biståndsbedömare kan du kontakta Göteborgs stads kontaktcenter på 031-365 00 00.</p>
 				<p>För dig som kund kostar hemtjänst i Göteborg <b>214 kr/timme</b>. Det finns dock ett <b>högkostnadsskydd</b> för alla kostnader över <b>2139kr</b> i månaden, likt inköp av medicin på apoteket. Alla kostnader över 2139kr täcks av högkostnadsskyddet.       
 		         Du kan med andra ord exempelvis ha 100 timmar hemtjänst, och fortfarande endast betala upp till högkostnadsskyddet 2139kr i månaden. Din biståndsbedömare avgör dock efter en utredning av dina behov hur många timmar du skall beviljas stöd. Är det mindre än högkostnadsskyddet betalar du givetvis bara för det som utförs i ditt hem, och har du inte råd att betala för din hemtjänst vänder du dig till samma biståndshandläggare för hjälp och konsultation om hur du kan få dina behov tillgodosedda av oss ändå.
 				</p>
