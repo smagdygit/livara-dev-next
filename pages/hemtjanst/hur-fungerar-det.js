@@ -42,9 +42,8 @@ function App() {
 				</p>
 				<br />
 				<h3>Vad kostar hemtjänst?</h3>
-				<p>Det är kommunen som reglerar avgifterna för din hemtjänst, och kostnaden kan variera. Vänd dig till din biståndsbedömare för information om vad just din hemtjänst hade kostat dig. Behöver du hjälp att nå din biståndsbedömare kan du kontakta Göteborgs stads kontaktcenter på 031-365 00 00.</p>
-				<p>För dig som kund kostar hemtjänst i Göteborg <b>214 kr/timme</b>. Det finns dock ett <b>högkostnadsskydd</b> för alla kostnader över <b>2139kr</b> i månaden, likt inköp av medicin på apoteket. Alla kostnader över 2139kr täcks av högkostnadsskyddet.       
-		         Du kan med andra ord exempelvis ha 100 timmar hemtjänst, och fortfarande endast betala upp till högkostnadsskyddet 2139kr i månaden. Din biståndsbedömare avgör dock efter en utredning av dina behov hur många timmar du skall beviljas stöd. Är det mindre än högkostnadsskyddet betalar du givetvis bara för det som utförs i ditt hem, och har du inte råd att betala för din hemtjänst vänder du dig till samma biståndshandläggare för hjälp och konsultation om hur du kan få dina behov tillgodosedda av oss ändå.
+				<p>Det är kommunen som reglerar avgifterna för din hemtjänst, och kostnaden kan variera. Vänd dig till din biståndsbedömare för information om vad just din hemtjänst hade kostat dig. Behöver du hjälp att nå din biståndsbedömare kan du kontakta Göteborgs stads kontaktcenter på <a href="tel:0313650000">031-365 00 00</a>.</p>
+				<p>För mer information om kostnader inom hemtjänsten, <a href="https://goteborg.se/wps/portal/start/aldre/hjalp-i-hemmet/avgifter-och-kostnader">besök Göteborgs Kommun hemsida här.</a>
 				</p>
 				<p>Kontakta oss gärna, eller din biståndsbedömare för mer information.</p>
 				<br />
