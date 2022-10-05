@@ -116,13 +116,13 @@ function Kontakt() {
 				<Divider />
 				<br />
 				<h2><b>Kontaktinformation</b></h2>
-				<a href={'tel:0738350213'}>
-					<Button size='massive' color='green' icon labelPosition='left'>Ring 0738-350213<Icon name='phone' /></Button>
+				<a href={'tel:0313204149'}>
+					<Button size='massive' color='green' icon labelPosition='left'>031-320 41 49<Icon name='phone' /></Button>
 				</a>
 				<br />
 				<br />
 				<a href={'mailto:support@livara.se'}>
-					<Button size='massive' color="blue" icon labelPosition='left'>Mejla support@livara.se<Icon name='mail' /></Button>
+					<Button size='massive' color="blue" icon labelPosition='left'>support@livara.se<Icon name='mail' /></Button>
 				</a>
 				<br />
 				<br />

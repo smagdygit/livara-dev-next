@@ -113,7 +113,7 @@ function Navbar() {
 			{
 				type: 'link',
 				url: '/kontakt',
-				name: 'Kontakt',
+				name: 'Kontakta Oss',
 				special: true,
 			}
 		],/*
@@ -235,8 +235,8 @@ function Navbar() {
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
 											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
 												<center>
-													<h2>Livara Omsorg</h2>
-													<p>Omsorg På Dina Villkor</p>
+													<h2>Livara Hemtjänst</h2>
+													<p>Hemtjänst På Dina Villkor</p>
 												</center>
 											</a>
 										</Link>
@@ -264,8 +264,8 @@ function Navbar() {
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
 											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
 												<div>
-													<h1 style={{fontSize: '3em'}}>Livara Omsorg</h1>
-													<p style={{fontSize: '1.3em'}}>Omsorg På Dina Villkor</p>
+													<h1 style={{fontSize: '3em'}}>Livara Hemtjänst</h1>
+													<p style={{fontSize: '1.3em'}}>Hemtjänst På Dina Villkor</p>
 												</div>
 											</a>
 										</Link>

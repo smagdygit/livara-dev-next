@@ -53,7 +53,7 @@ function MyApp({ Component, pageProps }) {
 						<br />
 						<div style={{ width: '50%', color: 'white', fontSize: '' }} className="d-flex justify-content-center">
 							<Link href={'/kontakt/'} style={{ width: 'auto' }}>
-								<a style={{ textDecoration: 'none', color: 'white', cursor: 'pointer', fontSize: '' }} className="mb-0">Kontakt</a>
+								<a style={{ textDecoration: 'none', color: 'white', cursor: 'pointer', fontSize: '' }} className="mb-0">Kontakta Oss</a>
 							</Link>
 							&nbsp;|&nbsp;
 							<a href={'https://seniorval.se/hemtjanst/goteborg/livara-hemtjänst/'} style={{ textDecoration: 'none', color: 'white' }}>
@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }) {
 							</a>*/}
 						</div>
 						<br />
-						<p className="text-white">Livara © 2021</p>
+						<p className="text-white">Livara © 2022</p>
 					</center>
 				</footer>
 			</div>

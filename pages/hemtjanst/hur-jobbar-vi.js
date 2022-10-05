@@ -20,13 +20,13 @@ function App() {
 			</center>
 			<div>
 				<h3>Kvalité enligt oss på Livara</h3>
-				<p>På Livara omsorg är vi måna om ditt välmående, och har därför starka värdegrunder för att optimera utförandet hos dig. Vi arbetar aktivt med utveckling och uppföljning av våra värdegrunder, och garanterar dig som kund ett anmärkningsvärt bemötande av högsta kvalité.</p>
+				<p>På Livara omsorg är vi måna om ditt välmående, och har därför starka värdegrunder för att optimera utförandet hos dig. Vi arbetar aktivt med utveckling och uppföljning av våra värdegrunder, och garanterar dig som kund en anmärkningsvärd hemtjänst av högsta kvalité. </p>
 				<br />
 				<h3>Integritet</h3>
-				<p>Det är viktigt att du som kund känner att din integritet respekteras. Vi tar hänsyn till dina viljor och behov, och respekterar dina gränser. All personal på Livara omsorg omfattas dessutom av strikt sekretess, så att du som kund kan känna dig trygg i ditt hem.</p>
+				<p>Det är viktigt att du som kund känner att din integritet respekteras. Vi tar hänsyn till dina viljor och behov, och respekterar dina gränser. All personal på Livara omsorg omfattas dessutom av strikt sekretess, så att du som kund kan känna dig trygg i ditt hem. Vi diskuterar eller sprider ingen information om dig utan ditt skriftliga samtycke.  </p>
 				<br />
 				<h3>Hög kontinuitet</h3>
-				<p>På Livara omsorg är vi väl medvetna om hur viktigt det är med stabilitet och relationsskapande för att känna trygghet. Vi har därför utvecklat en metod som går ut på att du som kund endast har ett fåtal personer som jobbar hos dig, och beroende på hur mycket hemtjänst du som kund får utfört kan det variera mellan 1- 4 personer. Detta skapar den nära relation som behövs i skapandet av trygghet och välmående i hemmet.</p>
+				<p>På Livara omsorg är vi väl medvetna om hur viktigt det är med stabilitet och relationsskapande för att känna trygghet. Vi har därför utvecklat en arbetsmetod som går ut på att du som kund endast har ett fåtal personer som jobbar hos dig, och beroende på hur mycket hemtjänst du som kund får utfört, kan det variera mellan 1 till 4 personer. Detta skapar den nära relation som behövs i skapandet av trygghet och välmående i hemmet, samt stabilitet för vår personal på deras arbetsplats. Ett plus för allas trevnad helt enkelt. </p>
 				<br />
 				<h3>Salutogent förhållningssätt</h3>
 				<p>Vi arbetar utifrån ett så kallat salutogent förhållningssätt med dig som kund. Det innebär att vi arbetar med att stärka dina förmågor och din känsla av självständighet och välbefinnande i den dagliga livsföringen. Vi hjälper dig att stärka och behålla de styrkor och färdigheter du redan har, och stöttar dig vid behov så att du slipper bli fråntagen det du klarar av självständigt.</p>
