@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Review from './Review';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+//import Slider from "react-slick";
+//import "slick-carousel/slick/slick.css";
+//import "slick-carousel/slick/slick-theme.css";
 
 
 function SlidingReviews() {
@@ -43,9 +43,9 @@ function SlidingReviews() {
 	})
 
 	return (
-		<Slider {...settings} className="p-2 mt-5">
+		{/*<Slider {...settings} className="p-2 mt-5">
 			{reviewsHtml}
-		</Slider>
+	</Slider>*/}
 	);
 }
 
