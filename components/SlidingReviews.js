@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Review from './Review';
 //import Slider from "react-slick";
 //import "slick-carousel/slick/slick.css";
 //import "slick-carousel/slick/slick-theme.css";
@@ -38,14 +37,12 @@ function SlidingReviews() {
 
 	const reviewsHtml = reviews.map((item, index) => {
 		return (
-			<Review key={index} name={item.name} stars={item.stars} text={item.text} className="p-5" />
+			<p>test</p>
 		);
 	})
 
 	return (
-		{/*<Slider {...settings} className="p-2 mt-5">
-			{reviewsHtml}
-	</Slider>*/}
+		<p>test</p>
 	);
 }
 
