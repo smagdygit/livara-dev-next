@@ -60,7 +60,7 @@ function Mainpage() {
 					<div className="container" style={{ margin: '0', borderRadius: '10px' }}>
 						<div className="mb-5">
 							<h3>
-								Hej
+								Hej!
 							</h3>
 							<p>Vad roligt att du hittat hit. Vi på Livara Hemtjänst erbjuder omsorg av högsta kvalité i alla dess former. Livara Hemtjänst är ett omsorgsföretag som blivit godkända att utföra hemtjänst av Göteborgs stad. Vår verksamhet startade i början av 2019 och har tillfredsställt göteborgarnas behov sedan dess. Nu erbjuder vi hemtjänst i stora delar av Göteborg, däribland Hisingen, Angered och Östra Göteborg. Är du osäker på om vi utför hemtjänst i ditt område? Kontakta oss gärna så berättar vi mer!</p>
 							<p>I perioder behöver vi dock stoppa inflödet av nya kunder för att kunna kvalitetssäkra vår verksamhet och bibehålla den höga kvalité våra kunder är vana vid, och samtidigt rusta upp för en ny grupp kunder att få in i verksamheten med bästa resultat. I dessa perioder finns intagningslistor att skriva upp sig på för alla nya kunder som önskar uppstart. Listorna följs sedan upp och intagningen av nya kunder görs i tur och ordning, men den som väntar på något gott, väntar aldrig för länge!</p>
@@ -79,7 +79,7 @@ function Mainpage() {
 							</Link>
 							<br />
 							<br />
-							<a href={'tel:0738350213'}>
+							<a href={'tel:031-320 41 49'}>
 								<Button size='big' color='green' icon labelPosition='left'>Ring 0738-350213<Icon name='phone' /></Button>
 							</a>
 						</div>

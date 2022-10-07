@@ -224,7 +224,7 @@ function Navbar() {
 							{isBreakpoint &&
 								<>
 									<Grid.Column width={4} className="p-3">
-										<a href="tel:0738350213" style={{ textDecoration: 'none', color: 'black' }}>
+										<a href="tel:031-320 41 49" style={{ textDecoration: 'none', color: 'black' }}>
 											<center>
 												<Icon style={{ color: 'green' }} name="phone" size="big" />
 												<p>Ring</p>
