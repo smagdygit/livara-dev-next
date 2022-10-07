@@ -19,7 +19,7 @@ function App() {
 				<br />
 			</center>
 			<div>
-				<h3>Vill du bli kund? Inga konstigheter!</h3>
+				<h3>Vill du bli kund?</h3>
 				<p>Slå oss en signal eller fyll i formuläret så kontaktar vi dig.</p>
 					<p>Här förklarar vi steg för steg vad som behövs för att bli en del av Livara-familjen. Mer information finns under fliken ”Hur fungerar hemtjänst”.</p>
 					<p>Så, för att bli kund behöver du först ha ett beslut från din biståndsbedömare på socialtjänsten. Om du inte vet vem din biståndsbedömare är, eller om du inte har någon biståndsbedömare, då går det att ringa till Göteborgs stads kontaktcenter med telefonnummer 031-365 00 00 så hjälper de dig att lokalisera ditt lokala socialtjänstkontor genom din adress och ålder. På ditt lokala kontor finns din nuvarande eller framtida biståndsbedömare. Behöver du hjälp att lokalisera din biståndsbedömare hjälper vi dig förstås. Våra kontaktuppgifter finner du under fliken ”Kontakta oss” högst upp.
