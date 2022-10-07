@@ -80,7 +80,7 @@ function Mainpage() {
 							<br />
 							<br />
 							<a href={'tel:031-320 41 49'}>
-								<Button size='big' color='green' icon labelPosition='left'>Ring 0738-350213<Icon name='phone' /></Button>
+								<Button size='big' color='green' icon labelPosition='left'>Ring 031-320 41 49<Icon name='phone' /></Button>
 							</a>
 						</div>
 						<div className="mb-5">
