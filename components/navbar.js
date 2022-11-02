@@ -77,7 +77,7 @@ function Navbar() {
 	const MenuElement = ((props) => {
 		return (
 			<Link href={props.url}>
-				<StyledOverlayElement href={props.url} onClick={() => closeFullscreenNav()} style={props.special !== undefined ? {fontSize: '35px', color: 'lightgreen'} : {}}>
+				<StyledOverlayElement href={props.url} onClick={() => closeFullscreenNav()} style={props.special !== undefined ? { fontSize: '35px', color: 'lightgreen' } : {}}>
 					{props.name}
 				</StyledOverlayElement>
 			</Link>
@@ -109,6 +109,11 @@ function Navbar() {
 				type: 'link',
 				url: '/hemtjanst/tillaggstjanster',
 				name: 'Tilläggstjänster',
+			},
+			{
+				type: 'link',
+				url: '/nyheter',
+				name: 'Nyheter',
 			},
 			{
 				type: 'link',
@@ -176,7 +181,7 @@ function Navbar() {
 					{subItem.type === 'link' &&
 						<>
 							{subItem.special !== undefined &&
-								<MenuElement url={subItem.url} name={subItem.name} special={true}/>
+								<MenuElement url={subItem.url} name={subItem.name} special={true} />
 							}
 							{subItem.special === undefined &&
 								<MenuElement url={subItem.url} name={subItem.name} />
@@ -219,7 +224,7 @@ function Navbar() {
 			</div>
 			<header style={{ backgroundColor: 'rgb(245, 245, 245, 0.0)' }} className=''>
 				<center>
-					<Grid padded centered verticalAlign='middle' style={{ maxWidth: '1100px', height: '110px' }}>
+					<Grid padded centered verticalAlign='middle' style={{ maxWidth: '1700px', height: '110px' }}>
 						<Grid.Row style={{ height: '100%' }} className="p-0">
 							{isBreakpoint &&
 								<>
@@ -251,16 +256,18 @@ function Navbar() {
 							}
 							{!isBreakpoint &&
 								<>
-									<Grid.Column width={2} className="m-0 p-2" style={{ cursor: 'pointer' }}>
+									<Grid.Column width={6}>
+									</Grid.Column>
+									<Grid.Column width={4} className="m-0 p-0" style={{ cursor: 'pointer' }} textAlign="center">
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
 											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
-												<div>
-													<Image src="/livara_logga_0.png" alt="Livara Logga" className="m-0" />
-												</div>
+												<center>
+													<Image src="/livara_logga_0.png" alt="Livara Logga" className="mx-0 my-2" height="110px" />
+												</center>
 											</a>
 										</Link>
 									</Grid.Column>
-									<Grid.Column width={6} style={{ cursor: 'pointer' }}>
+									{/*<Grid.Column width={6} style={{ cursor: 'pointer' }}>
 										<Link href={'/'} style={{ textDecoration: 'none', color: 'black' }}>
 											<a href={'/'} style={{ textDecoration: 'none', color: 'black', cursor: 'pointer' }}>
 												<div>
@@ -269,9 +276,7 @@ function Navbar() {
 												</div>
 											</a>
 										</Link>
-									</Grid.Column>
-									<Grid.Column width={2}>
-									</Grid.Column>
+							</Grid.Column>*/}
 									<Grid.Column width={6} style={{ height: '100%', width: '100%', verticalAlign: 'middle', paddingRight: '0' }}>
 										{/*<div className="float-right d-flex text-center justify-content-center" style={{height: '100%', width: '100%'}}>
 											<Button size="big" className="align-self-center" style={{}}>Meny</Button>

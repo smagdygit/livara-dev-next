@@ -15,7 +15,7 @@ import { useRouter } from 'next/router';
 function MyApp({ Component, pageProps }) {
 	const Logo = React.forwardRef((props, ref) => (
 		<a ref={ref} {...props}>
-			<Image src="/livara_logga_0.png" size="small" alt="Livara Logga" />
+			<Image src="/livara_logga_0.png" size="medium" alt="Livara Logga" />
 		</a>
 	));
 
@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
 					<Component {...pageProps} />
 				}
 
-				<footer style={{ backgroundColor: 'rgb(0, 0, 0, 0.9)', width: '' }} className="mt-5">
+				<footer style={{ width: '' }} className="mt-5">
 					<center className="p-4">
 						<div className="w-25">
 							<Link href={'/'} passHref>
@@ -51,13 +51,13 @@ function MyApp({ Component, pageProps }) {
 							</Link>
 						</div>
 						<br />
-						<div style={{ width: '50%', color: 'white', fontSize: '' }} className="d-flex justify-content-center">
+						<div style={{ width: '50%', color: 'black', fontSize: '' }} className="d-flex justify-content-center">
 							<Link href={'/kontakt/'} style={{ width: 'auto' }}>
-								<a style={{ textDecoration: 'none', color: 'white', cursor: 'pointer', fontSize: '' }} className="mb-0">Kontakta Oss</a>
+								<a style={{ textDecoration: 'none', color: 'black', cursor: 'pointer', fontSize: '' }} className="mb-0">Kontakta Oss</a>
 							</Link>
 							&nbsp;|&nbsp;
-							<a href={'https://seniorval.se/hemtjanst/goteborg/livara-hemtjänst/'} style={{ textDecoration: 'none', color: 'white' }}>
-								<p style={{ textDecoration: 'none', color: 'white', cursor: 'pointer', fontSize: '' }}>Seniorval</p>
+							<a href={'https://seniorval.se/hemtjanst/goteborg/livara-hemtjänst/'} style={{ textDecoration: 'none', color: 'black' }}>
+								<p style={{ textDecoration: 'none', color: 'black', cursor: 'pointer', fontSize: '' }}>Seniorval</p>
 							</a>
 							{/*&nbsp;|&nbsp;
 							<a href={'https://www.allabolag.se/5591696603/livara-hemtjänst-ab'} style={{ textDecoration: 'none', color: 'white' }}>
@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }) {
 							</a>*/}
 						</div>
 						<br />
-						<p className="text-white">Livara © 2022</p>
+						<p className="text-black">Livara © 2022</p>
 					</center>
 				</footer>
 			</div>
