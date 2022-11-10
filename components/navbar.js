@@ -110,11 +110,11 @@ function Navbar() {
 				url: '/hemtjanst/tillaggstjanster',
 				name: 'Tilläggstjänster',
 			},
-			{
+		/*	{
 				type: 'link',
 				url: '/nyheter',
 				name: 'Nyheter',
-			},
+			},*/
 			{
 				type: 'link',
 				url: '/kontakt',
