@@ -3,7 +3,7 @@ import { Divider, Image, Segment } from 'semantic-ui-react';
 import Head from "next/head";
 import Link from 'next/link';
 import { useRouter } from 'next/router'
-import list from '../list';
+import list from '../../../components/list';
 
 function Nyhet() {
     const router = useRouter()

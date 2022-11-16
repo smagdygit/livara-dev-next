@@ -3,7 +3,7 @@ import Review from '../../components/Review';
 import { Divider, Image, Segment } from 'semantic-ui-react';
 import Head from "next/head";
 import Link from 'next/link';
-import list from './list';
+import list from '../../components/list';
 
 
 function App() {
